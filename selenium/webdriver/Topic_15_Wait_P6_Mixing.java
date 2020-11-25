@@ -38,66 +38,66 @@ public class Topic_15_Wait_P6_Mixing {
 		
 	}
 	
-//	@Test
-//	public void TC_01_Not_found_Only_Implicit() {
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-//		
-//		System.out.println("TC_01 - START: " + getDateTimeSecond());
-//		
-//		
-//		try {
-//			Assert.assertTrue(driver.findElement(By.xpath("//div[@id='reg_form_box']")).isDisplayed());
-//		} catch (Exception e) {
-//			
-//		}
-//	 
-//		System.out.println("TC_01 - END: " + getDateTimeSecond());
-//	}
-//	
-//	@Test
-//	public void TC_02_Found_Implicit_Explicit() {
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		explicitWait = new WebDriverWait(driver, 8);
-//		
-//		System.out.println("TC_02 - START - Implicit: " + getDateTimeSecond());
-//		
-//		try {
-//			Assert.assertTrue(driver.findElement(By.xpath("//button[@name='login']")).isDisplayed());
-//		} catch (Exception e) {	
-//		}
-//		System.out.println("TC_02 - END - Implicit: " + getDateTimeSecond());
-//	
-//		System.out.println("TC_02 - START - Explicit: " + getDateTimeSecond());
-//		
-//		try {
-//			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@name='login']")));
-//		} catch (Exception e) {	
-//		}
-//		System.out.println("TC_02 - END - Explicit: " + getDateTimeSecond());
-//	}
-//	
-//	@Test
-//	public void TC_03_Not_Found_Implicit_Explicit() {
-//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-//		explicitWait = new WebDriverWait(driver, 8);
-//		
-//		System.out.println("TC_03 - START - Implicit: " + getDateTimeSecond());
-//		
-//		try {
-//			Assert.assertTrue(driver.findElement(By.xpath("//button[@name='automation-test']")).isDisplayed());
-//		} catch (Exception e) {	
-//		}
-//		System.out.println("TC_03 - END - Implicit: " + getDateTimeSecond());
-//	
-//		System.out.println("TC_03 - START - Explicit: " + getDateTimeSecond());
-//		
-//		try {
-//			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@name='automation-test']")));
-//		} catch (Exception e) {	
-//		}
-//		System.out.println("TC_03 - END - Explicit: " + getDateTimeSecond());
-//	
-//	}
+	@Test
+	public void TC_01_Not_found_Only_Implicit() {
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		
+		System.out.println("TC_01 - START: " + getDateTimeSecond());
+		
+		
+		try {
+			Assert.assertTrue(driver.findElement(By.xpath("//div[@id='reg_form_box']")).isDisplayed());
+		} catch (Exception e) {
+			
+		}
+	 
+		System.out.println("TC_01 - END: " + getDateTimeSecond());
+	}
+	
+	@Test
+	public void TC_02_Found_Implicit_Explicit() {
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		explicitWait = new WebDriverWait(driver, 8);
+		
+		System.out.println("TC_02 - START - Implicit: " + getDateTimeSecond());
+		
+		try {
+			Assert.assertTrue(driver.findElement(By.xpath("//button[@name='login']")).isDisplayed());
+		} catch (Exception e) {	
+		}
+		System.out.println("TC_02 - END - Implicit: " + getDateTimeSecond());
+	
+		System.out.println("TC_02 - START - Explicit: " + getDateTimeSecond());
+		
+		try {
+			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@name='login']")));
+		} catch (Exception e) {	
+		}
+		System.out.println("TC_02 - END - Explicit: " + getDateTimeSecond());
+	}
+	
+	@Test
+	public void TC_03_Not_Found_Implicit_Explicit() {
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		explicitWait = new WebDriverWait(driver, 8);
+		
+		System.out.println("TC_03 - START - Implicit: " + getDateTimeSecond());
+		
+		try {
+			Assert.assertTrue(driver.findElement(By.xpath("//button[@name='automation-test']")).isDisplayed());
+		} catch (Exception e) {	
+		}
+		System.out.println("TC_03 - END - Implicit: " + getDateTimeSecond());
+	
+		System.out.println("TC_03 - START - Explicit: " + getDateTimeSecond());
+		
+		try {
+			explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@name='automation-test']")));
+		} catch (Exception e) {	
+		}
+		System.out.println("TC_03 - END - Explicit: " + getDateTimeSecond());
+	
+	}
 	@Test
 	public void TC_04_Not_Found_Explicit_By() {
 		explicitWait = new WebDriverWait(driver, 6);
