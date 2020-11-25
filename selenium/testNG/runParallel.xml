@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Project Name" parallel="tests" thread-count="">
+  
+  <test name="Run on Chrome">
+	<parameter name="browser" value="chrome"/>
+    <classes>
+      <!-- <class name="testNG.Topic_01_Annotation"/>
+      <class name="testNG.Topic_02_Assertion"/>
+      <class name="testNG.Topic_03_Group"/>
+      <class name="testNG.Topic_05_Priority_Skip_Description"/>
+      <class name="testNG.Topic_06_Data_provider"/>
+      <class name="testNG.Topic_07_Parameter"/> -->
+      <class name="testNG.Topic_09_Parallel"/>
+     <!--  <class name="testNG.Topic_10_Loop"/>
+      <class name="testNG.Topic_13_Dependency"/> -->
+    </classes>
+  </test> 
+  
+   <test name="Run on Firefox">
+ 	<parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testNG.Topic_07_Parameter"/>
+    </classes>
+  </test>
+
+  
+  <!-- Test -->
+</suite> <!-- Suite -->
